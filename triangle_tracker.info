@@ -1,0 +1,5 @@
+name = Triangle Tracker
+description = enter the lengths of the sides of triangle to display what kind of triangle it is.
+package = Brett and Daniel's Creations
+core = 7.x
+files[] = triangle_tracker.module
