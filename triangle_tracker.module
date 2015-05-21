@@ -45,15 +45,6 @@
         );
         return $form;
     }
-    function triangle_tracker_validate_form($form_id, &$form, &$form_state) {
-        $side_a = $form_state['values']['triangle_side_a'];
-        $side_b = $form_state['values']['triangle_side_b'];
-        $side_c = $form_state['values']['triangle_side_c'];
-
-        if (($side_a + $side_b) < $side_c || ($side_b + $side_c) < $side_a || ($side_a + $side_c) < $side_b) {
-            form_error($side_a, $side_b, $side_c, t('It is not a triangle if the sum of two sides is less than the other side.'));
-        }
-    }
 
     function triangle_tracker_form_submit($form, &$form_state) {
         $side_a = $form_state['values']['triangle_side_a'];
